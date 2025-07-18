@@ -905,7 +905,7 @@ input:checked + .slider:before {
   }
 
   #cookie-settings input[type="checkbox"] {
-    margin-left: 10px;
+    margin-left: 40px;
   }
 
   .cookie-label-text,
