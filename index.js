@@ -112,13 +112,13 @@ function SETRUNS()
     const disLabel = document.createElement("div");
     disLabel.id = "dis";
     disLabel.classList.add("cell");
-    disLabel.textContent = "Distance";
+    disLabel.textContent = "Distance (m)";
     headerRow.appendChild(disLabel);
 
     const timeLabel = document.createElement("div");
     timeLabel.id = "time";
     timeLabel.classList.add("cell");
-    timeLabel.textContent = "Time";
+    timeLabel.textContent = "Time (min)";
     headerRow.appendChild(timeLabel);
 
     // Header einfügen
