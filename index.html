@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link id="theme-style" rel="stylesheet" href="dark.css">
+    <script src="https://kit.fontawesome.com/74e104b2e1.js" crossorigin="anonymous"></script>
+    <meta name="google" content="notranslate">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</head>
+<body>
+
+    <div id="cookie-banner">
+        <p>Diese Website verwendet Cookies, um dir das beste Erlebnis zu bieten.</p>
+        <div class="buttons">
+            <button id="accept-cookies">Akzeptieren</button>
+            <button id="decline-cookies">Ablehnen</button>
+            <button id="cookie-settings-btn">Einstellungen</button>
+        </div>
+    </div>
+
+    <div id="cookie-settings" class="hidden">
+        <h3>Cookie-Einstellungen</h3>
+        <label>
+            <input type="checkbox" id="analytics-cookies">
+            Analyse-Cookies erlauben
+            <div class="cookie-description">
+                Diese Cookies helfen uns, die Nutzung der Website anonymisiert zu analysieren und zu verbessern.
+            </div>
+        </label><br>
+        <label>
+            <input type="checkbox" id="marketing-cookies">
+            Marketing-Cookies erlauben
+            <div class="cookie-description">
+                Diese Cookies werden verwendet, um dir personalisierte Werbung zu zeigen.
+            </div>
+        </label><br>
+        <button id="save-settings">Speichern</button>
+        <button id="close-settings">Schließen</button>
+    </div>
+
+    <h1 id="h1">Instant pace</h1>
+
+    <div class="dropdown">
+        <button><i class="fa-solid fa-bars"></i></button>
+        <div class="content">
+
+            <div class="submenu_design">
+                <a href="#" id="design">Design / Color ▸</a>
+                <div class="submenu-content-design">
+                    <a href="#" id="dark" onclick="INARBEIT_DARK()">Dark</a>
+                    <a href="#" id="light" onclick="INARBEIT_LIGHT()">Light</a>
+                </div>
+            </div>
+
+            <div class="submenu">
+                <a href="#" id="language">Language ▸</a>
+                <div class="submenu-content">
+                    <a href="#" id="deutsch" onclick="INARBEIT_DEUTSCH()">German</a>
+                    <a href="#" id="englisch" onclick="INARBEIT_ENGLISCH()">English</a>
+                </div>
+            </div>
+
+            <a href="" id="social_media">Social media</a>
+            <a href="" id="feedback_kontakt">Feedback / Kontaktformular</a>
+        </div>
+    </div>
+    
+
+    <nav class="navbar">
+        <ul>
+            <li>
+                <a href="index.html">
+                    <i id="home" class="fa-solid fa-house"></i>
+                </a>
+            </li>
+
+            <li><a id="about" href="about.html">About us</a></li>
+            <li><a id="help_support" href="help.html">Help / Support</a></li>
+            <li><a id="workwithus" href="work_with_us.html">Work with us</a></li>
+            <li><a id="sourcecode" href="source_code.html">Source & Development</a></li>
+            <li>
+                <a href="contact.html">
+                    <i id="kontakt" class="fa-solid fa-phone"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="welcome">
+        <h1 id="welcome-head">Welcome to Instant - pace</h1><br>
+        <p id="welcome-text">join for free</p>
+        <a href="rechner.html">
+            <button id="navigate-to-tool">Navigate to the tool</button>
+        </a>
+    </div>
+
+
+    <div class="about-section">
+        <h2 id="about-head">ABOUT INSTANT PACE</h2>
+        <p id="about-text">
+            Instant Pace is a modern, minimalist running platform designed to help you easily log and analyze your runs. Whether you're a beginner or a pro, our tools focus on speed, simplicity, and ease of use.
+        </p>
+
+        <div class="about-cta">
+            <p id="want-more-text">Want to know more about Instant Pace?</p>
+            <a href="about.html">
+                <button id="about-button">Learn more</button>
+            </a>
+        </div>
+    </div>
+
+
+
+    <div class="what-we-stand-for">
+        <h2 id="what-we-stand-for-head">WHAT WE STAND FOR</h2>
+        <div class="stand-for-items">
+            <div class="stand-item">
+                <h3>Responsive</h3>
+                <p>Built with responsive design in mind, Instant Pace ensures a smooth and optimized experience across all devices.</p>
+            </div>
+            <div class="stand-item">
+                <h3>Quality</h3>
+                <p>We focus on clean code, smooth performance, and a user experience that's both modern and reliable — because great software starts with quality at its core.</p>
+            </div>
+                <div class="stand-item">
+                <h3>Support</h3>
+                <p>We're here to help — get assistance anytime you have questions or run into issues.</p>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+    <div class="features-section">
+        <h2 id="features-head">FEATURES & VORTEILE</h2>
+        <div class="features-items">
+            <div class="feature-item">
+                <h3>🔧 No Setup Needed</h3>
+                <p>Start using Instant Pace instantly — no registration, no installations, and no waiting. Just open and run.</p>
+            </div>
+            <div class="feature-item">
+                <h3>🔒 Private by Design</h3>
+                <p>We don’t collect personal data. Everything runs locally in your browser — no login, no tracking, full control.</p>
+            </div>
+            <div class="feature-item">
+                <h3>📊 Visual Progress</h3>
+                <p>Your data turns into clear charts — track improvements and stay motivated through real results.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="contact-section">
+        <h2 id="contact-head">CONTACT ME</h2>
+        <p id="contact-text">If you have any questions or suggestions, feel free to reach out via email anytime.</p>
+        <p id="contact-email">
+            Email: 
+            <a href="mailto:contact.instantpace@yahoo.com" style="color: #00ffcc; text-decoration: underline;">
+            contact.instantpace@yahoo.com
+            </a>
+        </p>
+    </div>
+
+
+
+
+    <!--
+    <main>
+
+        <div class="input-row">
+            <label id="amount_runs">Amount runs:</label>
+            <input type="text" id="newEntry" name="newEntry">
+            <button id="addEntry" onclick="SETRUNS()">Submit</button>
+        </div>
+
+        <div class="table"></div>
+
+        <div class="table2" id="toogle"></div>
+
+        <div class="table2" id="myChartContainer"></div>
+
+        <div class="table3" id="CONTAINER"></div>
+        
+    </main>
+    -->
+
+
+
+    <footer>
+        <nav class="footer-nav">
+            <a href="#" id="showImpressum">Impressum</a>
+            <a> | </a>
+            <a href="#" id="showDatenschutz">Datenschutz</a>
+            <a> | </a>
+            <a href="#" id="showUrheberrecht">Urheberrecht</a>
+            <a> | </a>
+            <a href="#" id="showKontakt">Kontakt</a>
+            <a> | </a>
+            <a href="#" id="showCookieSettings">Cookie-Einstellungen</a>
+        </nav>
+    </footer>
+
+    <!-- Panel unter Footer, full width -->
+    <div id="infoPanel">
+        <button id="closePanel">×</button>
+        <div id="panelContent"></div>
+    </div>
+
+
+    <script src="homepage.js"></script>
+    <script src="footer_pop_up.js"></script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+<!--
+impressum
+
+**Impressum**
+
+Angaben gemäß § 5 TMG:
+
+Rodin Aksünger  
+Bohnapfelweg 27  
+70437 Stuttgart  
+Deutschland  
+
+Kontakt:  
+E-Mail: contact.instantpace@yahoo.com  
+
+Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:  
+Rodin Aksünger
+
+Dies ist eine private, nicht-kommerzielle Webseite. Es werden keine personenbezogenen Daten erhoben.
+-->
